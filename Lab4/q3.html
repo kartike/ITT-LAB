@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>JAVASCRIPT-2</title>
+  
+</head>
+<body>
+  
+   <div id="1" style="width:550px;float:bottom;background:green;margin-top:-10px;z-index:1;position:absolute"
+   onmouseover="hovering(1)">
+   Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components. The number of principal components is less than or equal to the number of original variables. This transformation is defined in such a way that the first principal component has the largest possible variance (that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components. The resulting vectors are an uncorrelated orthogonal basis set.
+  </div>
+  <div id="2" style="width:550px;float:bottom;background:orange;margin-top:10px;margin-left:10px;z-index:0;position:absolute" onmouseover="hovering(2)">
+    k-means clustering is a method of vector quantization, originally from signal processing, that is popular for cluster analysis in data mining. k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells.
+  </div>
+  <div id="3" style="width:550px;float:bottom;background:yellow;margin-top:60px;margin-left:20px;z-index:0;position:absolute" onmouseover="hovering(3)">
+    In data mining and statistics, hierarchical clustering (also called hierarchical cluster analysis or HCA) is a method of cluster analysis which seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two types:
+    Agglomerative: This is a "bottom up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
+    Divisive: This is a "top down" approach: all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
+  </div>
+
+    <script type="text/javascript">
+    function hovering(x)
+    {
+      document.getElementById(x).style.zIndex=10;
+      if(Number(x)==1)
+      {
+        document.getElementById("2").style.zIndex=1;
+        document.getElementById("3").style.zIndex=1;
+      }
+      else if(Number(x)==2)
+      {
+        document.getElementById("3").style.zIndex=1;
+        document.getElementById("1").style.zIndex=1;
+      }
+      else
+      {
+        document.getElementById("1").style.zIndex=1;
+        document.getElementById("2").style.zIndex=1;
+      }
+    }
+  </script>
+
+</body>
+</html>

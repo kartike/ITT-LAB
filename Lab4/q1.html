@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>NO man javascript</title>
+        <script>
+             var x = window.prompt("Enter fibonocci number to find","0");
+                var lim = parseInt(x);
+                var i;
+                var fib=[]
+                fib[0]=0;
+                fib[1]=1;
+                for(i=2;i<lim;i++){
+                    fib[i]=fib[i-2]+fib[i-1];
+            }
+                    document.write("The result is: "+"<br>");
+                for(i=0;i<lim;i++){
+                    document.write(fib[i]+"<br>");
+                }
+           
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <script>
+               
+            var y = window.prompt("Enter square number to print","0");
+                    var lim1 = parseInt(y);
+                  
+                for(i=1;i<=y;i++){
+                    document.write("<tr><td>"+i+"</td><td>"+i*i+"</td></tr>")                   
+                }
+                
+        </script>
+         </table>
+    </body>
+</html>

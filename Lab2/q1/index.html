@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Question One</title>
+        <script>
+            function bgChange(bg) {
+                document.body.style.background = bg;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h3>Change Background colors</h3>
+        <table style="width:300px;height:100px" border =1px>
+            <tr>
+                <th onmouseover="bgChange(this.style.color)"
+                onmouseout="bgChange('transparent')"
+                style="color:#B71C1C"><b>First</b>
+                </th>
+                <th onmouseover="bgChange(this.style.color)"
+                    onmouseout="bgChange('transparent')"
+                    style="color:#0D47A1"><b>Second</b>
+                </th>
+                <th onmouseover="bgChange(this.style.color)"
+                    onmouseout="bgChange('transparent')"
+                    style="color:#004D40"><b>Third</b>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>

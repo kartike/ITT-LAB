@@ -1,0 +1,32 @@
+<html> 
+<head> 
+	<style>
+table {
+    border-collapse: collapse;
+    max-width: 25%;
+    background-color: #E66C2C
+}
+
+th {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px ;
+    background-color: #7FFFD4	;
+}
+td {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px ;
+}
+
+
+</style>
+<script> 
+document.write( "<table border=2px> <tr> <th>Number</th> <th>Square</th> <th>Cube</th> </tr>" ) 
+for(var n=0; n<=10; n++) { 
+document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>" + n*n*n + "</td></tr>" ) 
+} 
+document.write( "</table>" ) 
+</script> 
+</head> 
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piglatin</title>
+    </head>
+    <body>
+        <script>
+            var x = window.prompt("Enter the string");
+            var dup = x;
+            var test = "";
+            var count=0;
+            var rangeofb =0 ;
+            for(i=0;i<x.length;i++){
+                if(x.charAt(i)=='a' || x.charAt(i)=='e' || x.charAt(i)=='i' || x.charAt(i)=='o' || x.charAt(i)=='u'){
+                    rangeofb = i;
+                        break;
+                }
+                else{
+                    test = test+""+x.charAt(i);
+                    count++;
+                }
+            }
+            document.write(test+"<br>");
+            
+            for(i=0;i<rangeofb;i++){
+                dup.charAt(i)='';
+            }
+            document.write(dup);
+            if(count==0){
+                x= x+""+test+"ay";
+            }
+            else{
+                x = x+""+test+"ay";
+            }
+            document.write("piglet value is :"+x);
+            
+        </script>
+    </body>
+</html>

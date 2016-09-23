@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>	
+
+	<form>
+ 	<input type = "text" id = "eng" style="width:200px"><br><br>
+ 	<input type = "button" id = "btn" value = "Convert" onclick = "Num()"><br><br>
+ 	<input type = "text" id = "area" style="width:200px"><br><br>
+ 	<input type = "text" id = "ph" style="width:200px"><br><br>		
+                    </form>
+
+	<script type="text/javascript">
+			
+	function Num()
+                    {
+                      var s = document.getElementById("eng").value;
+	var st= s.split(" ");
+	st[0] = st[0].replace(/[()]/g ,'')
+	document.getElementById("area").value = "Area Code: " + st[0];
+	document.getElementById("ph").value = "Phone no: " + st[1];
+
+                    }
+		</script>
+	</body>
+</html>

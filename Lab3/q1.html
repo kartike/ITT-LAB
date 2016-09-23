@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Textgrowing.html</title>
+    </head>
+    <body>
+         <p id="nono">Yo YO!</p>
+        <script>
+            var i = 5;
+            var x = document.getElementById("nono");
+            function myfunction(){
+                
+                if(i<51){
+                    
+                    x.style.fontSize = i+"pt";
+                    x.style.color = "red";
+                    i++;
+                }
+                else{
+                    clearInterval(myVar);
+                    var myVar1 = setInterval(myshrink,100);
+                }
+            }
+                      
+                var myVar = setInterval(myfunction, 100);
+            
+             i1= 50;
+            function myshrink(){
+                
+                if(i1>5){
+                    
+                    x.style.fontSize = i1+"pt";
+                    x.style.color = "blue";
+                    i1--;
+                }
+                else{     
+                    clearInterval(myVar1);
+                }
+                
+            }
+                                      
+        </script>
+           
+    </body>
+</html>

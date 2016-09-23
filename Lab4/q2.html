@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 Q2</title>
+</head>
+<body>
+	<div id="output"></div>
+	<button onclick="leftMost()">Left Most Vowel</button>
+	<button onclick="reverse()">Reverse Number</button>
+	<script type="text/javascript">
+		var indexes=[];
+		var str="";
+		var output=document.getElementById('output');
+		function reverse()
+		{
+			reverseNum(prompt("Enter a Number: "));
+		}
+		function reverseNum(input)
+		{
+			var rev=input.split('').reverse().join('');
+			if(isNaN(rev))
+			{
+				output.innerHTML="Not a number!";
+				return;
+			}
+			output.innerHTML="Reversed Number: "+rev;
+		}
+		function leftMost()
+		{
+			indexes=[];
+			leftmost(prompt("Enter a string"));
+		}
+		function leftmost(input)
+		{
+			str=input;
+			add('a');
+			add('e');
+			add('i');
+			add('o');
+			add('u');
+			if(indexes.length==0)
+			{
+				output.innerHTML="No vowels!";
+				return;
+			}
+			indexes.sort(function(a,b){return a-b;});
+			output.innerHTML="Left Most Vowel: "+indexes[0];
+		}
+		function add(char)
+		{
+			var lower=str.indexOf(char);
+			if(lower!=-1)
+				indexes.push(lower);
+			var upper=str.indexOf(char.toUpperCase());
+			if(upper!=-1)
+				indexes.push(upper);
+		}
+	</script>
+</body>
+</html>
