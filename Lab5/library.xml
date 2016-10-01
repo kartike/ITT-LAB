@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./library.xsl"?>
+<catalog>
+  <book>
+    <isbn>1BC30FB123</isbn>
+    <title>Book 1</title>
+    <author>Author 3</author>
+  </book>
+
+  <book>
+    <isbn>1AC35HA153</isbn>
+    <title>Book 2</title>
+    <author>Author 3</author>
+  </book>
+
+  <book>
+    <isbn>2AS35TN642</isbn>
+    <title>Book 3</title>
+    <author>Author 3</author>
+  </book>
+
+</catalog>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./student.xsl"?>
+<info>
+
+  <student>
+    <usn>1BC30FB123</usn>
+    <name>Person 1</name>
+    <college>Manipal Institute of Technology</college>
+    <branch>Information Technology</branch>
+    <yoj>2014</yoj>
+    <email>person1@gmail.com</email>
+  </student>
+
+</info>

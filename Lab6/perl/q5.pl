@@ -2,11 +2,9 @@
 
 use CGI qw( :standard );
 print "Content-Type: text/html\n\n";
-$name = param("cmdd");
-$aa = system($name);
-print "<html> <head>\n";
-print "<title>Hello, world!</title>";
-print "</head>\n";
+
+print "<html>\n";
 print "<body>\n";
-print $aa;
+($s,$m,$h)=localtime(time);
+print "$h:$m:$s \n";
 print "</body> </html>\n";

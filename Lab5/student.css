@@ -1,0 +1,15 @@
+info {
+  color: #383D8B;
+}
+
+student {
+  padding: 50px;
+}
+
+student * {
+  display: block;
+}
+
+name {
+  font-weight: bold;
+}
